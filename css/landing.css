@@ -1,0 +1,67 @@
+#landing-text {
+  color: #fff !important;
+  font-size: 20rem;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  transition: 0.5s ease-out;
+}
+
+#landing-text:hover {
+  color: #fcd249 !important;
+  transition: 0.5s ease-in;
+}
+
+#landing-subtext {
+  color: #f2f2f2 !important;
+  font-size: 2rem;
+  font-style: italic;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  transition: 1.5s ease-out;
+}
+
+#landing-catchphrase {
+  color: #fff;
+  text-align: right;
+  font-style: italic;
+}
+
+.prompt .column {
+  padding: 50px !important;
+  letter-spacing: 2px;
+}
+
+.side-prompt {
+  color: #494D5F !important;
+  font-size: 10rem !important;
+  font-weight: 800 !important;
+}
+
+.prompt-paragraph {
+  text-indent: 40px;
+  font-size: 0.8rem;
+}
+
+#section-three {
+  font-size: 6rem;
+  color: #fff !important;
+}
+
+.table-content {
+  font-size: 2rem;
+}
+
+.table-content button {
+  font-size: 1.5rem;
+}
+
+#sounds-title {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
