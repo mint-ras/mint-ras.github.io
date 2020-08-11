@@ -51,6 +51,11 @@
   color: #fff !important;
 }
 
+#section-four {
+  font-size: 6rem;
+  color: #000 !important;
+}
+
 .table-content {
   font-size: 2rem;
 }
@@ -64,4 +69,54 @@
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+}
+
+#gallery {
+  --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
+}
+
+#floating-btn {
+  height: 50px !important;
+  border-radius: 100px;
+  bottom: 35px;
+  right: 35px;
+  position: fixed;
+  z-index: 9999;
+  font-weight: 800;
+  background-color: #000000;
+  box-shadow: none !important;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+}
+
+#floating-btn:hover {
+  transition: 0.2s ease-in;
+  animation: pulse 2s infinite;
+  background-color: #494D5F;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
