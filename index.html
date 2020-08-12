@@ -15,15 +15,23 @@
     <link href="css/landing.css" rel="stylesheet" />
   </head>
   <body style="height: 100%;">
-    <nav class="navbar is-fixed-top" role="navigation" aria-level="main-navigation">
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-level="main-navigation">
       <div class="navbar-brand">
-        <a href="" target="_blank" class="navbar-item mt" id="nav-logo">
+        <a href="#home" class="navbar-item mt" id="nav-logo">
           BAYBAYIN
         </a>
       </div>
+      <div class="navbar-menu st">
+        <div class="navbar-end main">
+          <a href="#introduction" class="page-anchor navbar-item">INTRODUCTION</a>
+          <a href="#comparison" class="page-anchor navbar-item">COMPARISON</a>
+          <a href="#sounds" class="page-anchor navbar-item">SOUNDS OF BAYBAYIN</a>
+          <a href="#writing" class="page-anchor navbar-item">WRITING IN BAYBAYIN</a>
+        </div>
+      </div>
     </nav>
-    <section class="hero is-fullheight">
-      <div class="hero-body" style="background: url('assets/landing_bg.png')">
+    <section class="hero is-fullheight" id="home">
+      <div class="hero-body" style="background: url('assets/landing_bg.png'); background-size: cover;">
         <div class="container has-text-centered">
           <p class="title bt is-spaced" id="landing-text" data-aos="zoom-in">BAYBAYIN</p>
           <p class="subtitle mt" id="landing-subtext">ba&nbsp;-y&nbsp;-ba&nbsp;-yi&nbsp;-n</p>
@@ -32,7 +40,7 @@
         </div>
       </div>
     </section>
-    <section class="section" style="background-color: #fff;">
+    <section class="section" id="introduction" style="background-color: #fff;">
       <div class="columns prompt">
         <div class="column has-text-centered">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuFsyll7KbRu7QUuc0CTt00nZGtD9dgiFUPDfz-U44UGsLSw/viewform" target="_blank" class="button st" id="floating-btn">
@@ -73,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section class="hero">
+    <section class="hero" id="comparison">
       <div class="hero-body" style="background: url('assets/break_bg.png');">
         <div class="container has-text-centered">
           <p class="title mt" id="section-three" data-aos="zoom-in">TRADITIONAL VS MODERN</p>
@@ -124,7 +132,7 @@
         </div>
       </div>
     </section>
-    <section class="section" style="background: #8458B3;">
+    <section class="section" id="sounds" style="background: #8458B3;">
       <div class="container">
         <p class="title mt" id="sounds-title" data-aos="zoom-in-up">Sounds of Baybayin</p>
         <hr />
@@ -729,7 +737,7 @@
         </table>
       </div>
     </section>
-    <section class="section" id="gallery">
+    <section class="section" id="writing">
       <div class="container has-text-centered">
         <p class="title mt" id="section-four" data-aos="zoom-in">
           WRITING IN BAYBAYIN
@@ -738,6 +746,35 @@
       <hr />
       <div class="container">
         <div class="columns">
+          <div class="column" data-aos="zoom-down">
+            <p class="title is-spaced mt">Symbols and Variations</p>
+            <p class="subtitle st" style="letter-spacing: 2px;">Baybayin, unlike the Roman Alphabet, have basic characters that represent syllables that end with the sound “ah.” Meaning it is a syllabic writing system. <br /> <br /> The modern Baybayin writing system has 15 basic consonants:
+            </p>
+            <img src="assets/consonants.png" /> <br /><br />
+            <p class="subtitle st" style="letter-spacing: 2px;">and 12 additional characters:
+            </p>
+            <img src="assets/additional_consonants.png" />
+          </div>
+          <div class="column" data-aos="zoom-down">
+            <p class="title is-spaced mt">Variations</p>
+            <p class="subtitle st" style="letter-spacing: 2px;">Since all of the consonants in their primary forms are read with an “ah” sound, their variations are pronounced as consonant + vowel.  Writing these variations has a vowel method that can be applied to all characters. 
+            </p>
+            <img src="assets/variations.png" /> <br /> <br />
+            <p class="title is-spaced mt">Punctuations</p>
+            <p class="subtitle st" style="letter-spacing: 2px;"> A single bar | to mark pauses, similar to a Comma and;
+            </p>
+            <p class="subtitle st" style="letter-spacing: 2px; text-indent: 25px;">&#8226;&nbsp;To mark pauses, you use single bar (|) notation.</p>
+            <p class="subtitle st" style="letter-spacing: 2px; text-indent: 25px;">&#8226;&nbsp; A double bar || used for full stops in sentences. .</p>
+            <p class="subtitle st" style="letter-spacing: 2px;">
+              In modern Baybayin, one can loan other punctuations like the exclamation point (!) and question mark (?) whenever they are needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="columns" data-aos="fade-right">
           <div class="column has-text-centered">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/uT_gw0mxqr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -747,7 +784,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="columns">
+        <div class="columns" data-aos="fade-left">
           <div class="column has-text-centered">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i0NqYvKYhHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -758,6 +795,7 @@
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
     <script>
       AOS.init();
     </script>
@@ -770,6 +808,9 @@
         sound.play();
         sound.currentTime=0;
       }
+    </script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
 </html>
