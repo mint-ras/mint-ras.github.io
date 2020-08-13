@@ -60,6 +60,16 @@
   font-size: 2rem;
 }
 
+.members-text {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+}
+
+.footer-text {
+  font-size: 0.7rem;
+  color: #d1d1d1;
+}
+
 .table-content button {
   font-size: 1.5rem;
 }
@@ -102,6 +112,10 @@
   transition: 0.2s ease-in;
   animation: pulse 2s infinite;
   background-color: #494D5F;
+}
+
+#members-list {
+  padding: 0px;
 }
 
 @keyframes pulse {
