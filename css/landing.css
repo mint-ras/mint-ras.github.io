@@ -118,6 +118,10 @@
   padding: 0px;
 }
 
+#footer-url:hover {
+  color: #8458B3;
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
